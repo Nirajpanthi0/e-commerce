@@ -1,20 +1,23 @@
-import React from 'react';
-import banner from '../../../public/image/banner.webp';
-import Image from 'next/image';
-
+import React from 'react'
+import banner from '../../../public/image/banner.webp'
+import Image from 'next/image'
 function Banner() {
   return (
-    <div className="w-full flex justify-center items-center py-4 px-2">
-      <div className="w-full max-w-[800px] h-auto">
-        <Image
-          src={banner}
-          alt="Banner"
-          priority
-          className="w-full h-auto object-contain rounded-md"
-        />
-      </div>
-    </div>
-  );
+    <>
+    <div className="h-[500px] w-full flex justify-center items-center">
+  <div className="h-[300px] w-[800px]  flex justify-center items-center">
+    <Image
+      src={banner}
+      alt="Banner"
+      width={800} 
+      height={300}
+      priority
+      className="object-contain"
+    />
+  </div>
+</div>
+    </>
+  )
 }
 
-export default Banner;
+export default Banner
